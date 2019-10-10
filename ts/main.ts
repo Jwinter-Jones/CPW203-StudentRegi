@@ -60,3 +60,10 @@ function getInputValue(id:string):string{
     return elem.value;
     // return (<HTMLInputElement> document.getElementById(id)).value; works too
 }
+
+function displayStudent(s:Student):void{
+    let newItem = document.createElement("li");
+    newItem.innerText = s.firstName + " " + s.lastName;
+    let displaySection = document.querySelector("#student-list>ul");
+    displaySection.appendChild(newItem);
+}

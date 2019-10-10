@@ -1,4 +1,3 @@
-"use strict";
 /**
  * Represents a college student
  */
@@ -36,4 +35,10 @@ function getInputValue(id) {
     var elem = document.getElementById(id);
     return elem.value;
     // return (<HTMLInputElement> document.getElementById(id)).value; works too
+}
+function displayStudent(s) {
+    var newItem = document.createElement("li");
+    newItem.innerText = s.firstName + " " + s.lastName;
+    var displaySection = document.querySelector("#student-list>ul");
+    displaySection.appendChild(newItem);
 }
