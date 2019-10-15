@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    background-color: darkgreen;
+    border-radius: .5em;
+    color: wheat;
+    padding: .5em;
+    margin-top: .2em;
+}
+
+span{
+    color: red;
+}
